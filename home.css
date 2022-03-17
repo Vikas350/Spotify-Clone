@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Noto+Serif&family=Oxygen&display=swap');
+body{
+    background-color: rgb(165, 199, 230);
+}
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+nav{
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+nav ul{
+    display:flex;
+    list-style-type: none;
+    background-color: black;
+    height:60px;
+    color:white;
+    align-items: center;
+}
+
+nav ul li{
+    padding:0 10px;
+    
+}
+
+.brand{
+    align-items: center;
+    display:flex;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+.brand img{
+    width:45px;
+    padding:0 3px;
+    /* height:20px; */
+}
+
+.container{
+    min-height: 67vh;
+    background-color: rgb(37, 36, 36);
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    margin:20px auto;
+    width:70%;
+    border-radius: 20px;
+    padding:30px;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+
+
+}
+
+.bottom{
+    position:sticky;
+    height:100px;
+    background-color:black;
+    bottom:0;
+    display:flex;
+    align-items: center;   /*vertical middle*/
+    justify-content: center;  /*horizontal middle*/
+    color: white;
+    flex-direction: column;
+    
+
+}
+.icons{
+    margin:8px;
+    /* padding:10px; */
+    cursor: pointer;
+}
+
+.icons i{
+    padding:0 20px;
+}
+
+#progressbar{
+    width:80vw;
+
+}
+
+.songItemContainer{
+    margin-top:40px;
+}
+
+.songItem{
+    height:50px;
+    display:flex;
+    width:66%;
+    background-color: rgb(99, 48, 48);
+    justify-content: space-around;
+    align-items:center;
+    border-radius: 30px;
+    margin:10px 0;
+    
+}
+
+.songItem img{
+    width:40px;
+    height:40px;
+    margin:5px;
+    border-radius:20px;;
+}
+
+.timestrap{
+    margin:0 15px;
+    
+}
+.songlistplay i{
+    cursor:pointer;
+}
+
+.songInfo{
+    position:absolute;
+    left:10vw;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.songInfo img{
+    opacity: 0;
+    transition:opacity 0.5s ease-in;
+}
